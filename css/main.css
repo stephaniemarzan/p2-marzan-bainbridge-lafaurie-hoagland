@@ -6,6 +6,31 @@
     box-sizing: border-box;
 }
 
+main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: #6868c7;
+    color: #242424;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 1.2em;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 1em;
+    color:#242424;
+    font-weight: 500;
+}
+
 /*--- Navigation Bar ---*/
 
 header nav{
@@ -18,7 +43,6 @@ nav ul li a{
     font-size: 1.2em;
     font-weight: 500;
     color: #242424;
-    text-transform: uppercase;
 }
 
 nav ul li {
@@ -33,13 +57,12 @@ nav ul li {
     padding: 0 24px;
 }
 
-.nav-link{
-    transition:0.7s ease;
-}
-
-.nav-link:hover{
+.nav-item a:active,
+.nav-item a:hover{
     color: #cd9637;
     font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease;
 }
 
 .hamburger{
@@ -89,6 +112,48 @@ nav ul li {
     color:#cd9637;
 }
 
+/*--------
+
+Home Page
+
+--------*/
+
+
+/*--- Header ---*/
+
+.header-img{
+    background-image: url("../images/mountains.jpg");
+    background-color: #5d5d68;
+    width: 100%;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 60vh;
+}
+
+.logo{
+    display: block;
+    opacity: 100% !important;
+    margin: 0 auto;
+    padding-top: 20vh;
+    max-height: 80%;
+}
+
+/*--- Home Content ---*/
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.home-content-img{
+    width:100%;
+}
+
+   
+/*--- Media Queries ---*/
+
+
 @media (min-width:769px) {
     .hamburger{
         display: none;
@@ -107,6 +172,21 @@ nav ul li {
     flex-direction: row;
     background: none;
     width: 50%;
+    padding-left: 5%;
+}
+
+.logo{
+    margin-left: 5%;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.home-content-img{
+    width:50%;
+    padding-right: 5%;
 }
 
 }
