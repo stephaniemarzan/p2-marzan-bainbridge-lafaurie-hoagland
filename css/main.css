@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-main{
+.container{
     max-width: 80%;
     margin: 0 auto;
 }
@@ -19,7 +19,7 @@ main{
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 700;
-    font-family: 1.2em;
+    font-size: 1.2em;
     margin-top: 5%;
     display: inline-block;
 }
@@ -29,6 +29,21 @@ p{
     font-size: 1em;
     color:#242424;
     font-weight: 500;
+}
+
+h1{
+    font-family: 'Mulish', sans-serif;
+    font-size:2em;
+    color:#252424;
+    text-transform: uppercase;
+    padding: 3% 0;
+}
+
+h2{
+    font-family: 'Mulish', sans-serif;
+    font-size:2em;
+    color:#252424;
+    padding-bottom: 2%;
 }
 
 /*--- Navigation Bar ---*/
@@ -74,7 +89,6 @@ nav ul li {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
@@ -111,6 +125,22 @@ nav ul li {
     left: 0;
     color:#cd9637;
 }
+
+/*--- Footer ---*/
+
+footer{
+    background-color: #cd9637;
+    padding: 2% 0;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    display:inline-block;
+}
+
 
 /*--------
 
@@ -150,7 +180,27 @@ Home Page
     width:100%;
 }
 
-   
+.home-event{
+    background-color: #5d5d68;
+    width: 100%;
+}
+
+
+.event-one,
+.event-two,
+.event-three{
+    background-color: white;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+.event-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding-bottom: 5%;
+}
+
 /*--- Media Queries ---*/
 
 
@@ -187,6 +237,23 @@ Home Page
 .home-content-img{
     width:50%;
     padding-right: 5%;
+}
+
+.event-list{
+    flex-direction: row;
+}
+
+
+.event-one,
+.event-two,
+.event-three{
+    background-color: white;
+    margin-bottom: 0%;
+}
+
+.event-one,
+.event-two{
+    margin-right: 20px;
 }
 
 }
