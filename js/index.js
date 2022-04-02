@@ -10,3 +10,17 @@ document.querySelectorAll(".nav-link").forEach( n => n.addEventListener("click",
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+const readMoreBtn = document.querySelector('.read-more-btn');
+const text = document.querySelector('.read-more-text');
+
+readMoreBtn.addEventListener("click", function(e){
+    text.classList.toggle('show-more');
+    if (readMoreBtn.innerText === "Read On"){
+        readMoreBtn.innerText = "Read Less";
+    }
+ else {
+    readMoreBtn.innerText = "Read More";
+  }
+})
+
