@@ -1,0 +1,267 @@
+/*--- General Styling ---*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: #6868c7;
+    color: #242424;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 5%;
+    display: inline-block;
+    border: none;
+}
+
+p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 1em;
+    color:#242424;
+    font-weight: 500;
+}
+
+h1{
+    font-family: 'Mulish', sans-serif;
+    font-size:2em;
+    color:#252424;
+    text-transform: uppercase;
+    padding: 3% 0;
+}
+
+h2{
+    font-family: 'Mulish', sans-serif;
+    font-size:2em;
+    color:#252424;
+    padding-bottom: 2%;
+}
+
+/*--- Navigation Bar ---*/
+
+header nav{
+    background-color: #5d5d68;;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #242424;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-item a:active,
+.nav-item a:hover{
+    color: #cd9637;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.hamburger{
+    display: block;
+}
+
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #5d5d68;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item{
+    margin:16px 0;
+}
+
+.nav-menu.active{
+    left: 0;
+    color:#cd9637;
+}
+
+/*--- Footer ---*/
+
+footer{
+    background-color: #cd9637;
+    padding: 2% 0;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    display:inline-block;
+}
+
+
+/*--------
+
+Home Page
+
+--------*/
+
+
+/*--- Header ---*/
+
+.header-img{
+    background-image: url("../images/mountains.jpg");
+    background-color: #5d5d68;
+    width: 100%;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 60vh;
+}
+
+.logo{
+    display: block;
+    opacity: 100% !important;
+    margin: 0 auto;
+    padding-top: 20vh;
+    max-height: 80%;
+}
+
+/*--- Home Content ---*/
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.home-content-img{
+    width:100%;
+}
+
+.home-event{
+    background-color: #5d5d68;
+    width: 100%;
+}
+
+.more-text{
+    display: none;
+}
+
+.read-more-text.show-more .more-text{
+    display: inline;
+}
+
+.event-one,
+.event-two,
+.event-three{
+    background-color: white;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+.event-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding-bottom: 5%;
+}
+
+/*--- Media Queries ---*/
+
+
+@media (min-width:769px) {
+    .hamburger{
+        display: none;
+        cursor: pointer;
+    }
+
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    position: static;
+    left: auto;
+    top: auto;
+    flex-direction: row;
+    background: none;
+    width: 50%;
+    padding-left: 5%;
+}
+
+.logo{
+    margin-left: 5%;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.home-content-img{
+    width:50%;
+    padding-right: 5%;
+}
+
+.event-list{
+    flex-direction: row;
+}
+
+
+.event-one,
+.event-two,
+.event-three{
+    background-color: white;
+    margin-bottom: 0%;
+}
+
+.event-one,
+.event-two{
+    margin-right: 20px;
+}
+
+}
