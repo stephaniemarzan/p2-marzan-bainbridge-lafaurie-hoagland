@@ -209,6 +209,28 @@ Home Page
     padding-bottom: 5%;
 }
 
+
+/*--------
+
+About Page
+
+--------*/
+
+/*-- About Content --*/
+
+.about-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10%
+}
+
+.about-we-believe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #5d5d68;
+    padding-top: 5%;
+
 /*--- Media Queries ---*/
 
 
