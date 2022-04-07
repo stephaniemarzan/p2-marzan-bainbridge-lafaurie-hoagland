@@ -232,6 +232,27 @@ About Page
     padding-top: 5%;
 }
 
+
+/*--------
+
+Donations Page
+
+--------*/
+
+.donation-ways{
+    margin-top: 5%;
+    background-color: #5d5d68;
+    padding: 60px;
+}
+
+.donation-ways h2{
+    text-transform: uppercase;
+}
+
+.donations-header{
+    padding-left: 10%;
+}
+
 /*--- Media Queries ---*/
 
 
