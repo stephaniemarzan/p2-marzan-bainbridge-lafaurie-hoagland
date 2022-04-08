@@ -24,3 +24,15 @@ readMoreBtn.addEventListener("click", function(e){
   }
 })
 
+function openDonation(evt, dollarAmount) {
+    var i;
+    donationAmount = document.getElementsByClassName ("donation-amount");
+    for (i = 0; i < donationAmount.length; i++) {
+        donationAmount[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i=0; i<tablinks.length; i++) {
+    }
+    document.getElementById(dollarAmount).style.display = "block";
+}
+
