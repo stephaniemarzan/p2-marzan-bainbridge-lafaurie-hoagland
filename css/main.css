@@ -140,8 +140,8 @@ footer a{
     font-size: 1.2em;
     text-decoration: none;
     display:inline-block;
+    padding: 20px;
 }
-
 
 /*--------
 
@@ -230,7 +230,63 @@ About Page
     text-align: center;
     background-color: #5d5d68;
     padding-top: 5%;
+}
 
+
+/*--------
+
+Donations Page
+
+--------*/
+
+.donation-ways{
+    margin-top: 5%;
+    background-color: #5d5d68;
+    padding: 60px;
+}
+
+.donation-ways h2{
+    text-transform: uppercase;
+}
+
+.donations-header{
+    padding-left: 10%;
+}
+
+.tabbed-content-containter{
+    width: 75%;
+    margin: auto;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #242424;
+    background-color: #6868c7;
+}
+
+.tab button {
+    background-color: #6868c7;
+    float: left;
+    border: none;
+    padding: 14px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #cd9637;
+}
+
+.tab button:active {
+    background-color: #242424;
+    border: #242424;
+}
+
+.donation-amount {
+    display: none;
+    padding: 15px 30px;
+    border: 1px solid #242424;
+    border-top: none;
+    background-color: #5d5d68;
+}
 /*--- Media Queries ---*/
 
 
