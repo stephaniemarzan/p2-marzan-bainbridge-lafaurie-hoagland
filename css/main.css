@@ -253,6 +253,40 @@ Donations Page
     padding-left: 10%;
 }
 
+.tabbed-content-containter{
+    width: 75%;
+    margin: auto;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #242424;
+    background-color: #6868c7;
+}
+
+.tab button {
+    background-color: #6868c7;
+    float: left;
+    border: none;
+    padding: 14px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #cd9637;
+}
+
+.tab button:active {
+    background-color: #242424;
+    border: #242424;
+}
+
+.donation-amount {
+    display: none;
+    padding: 15px 30px;
+    border: 1px solid #242424;
+    border-top: none;
+    background-color: #5d5d68;
+}
 /*--- Media Queries ---*/
 
 
