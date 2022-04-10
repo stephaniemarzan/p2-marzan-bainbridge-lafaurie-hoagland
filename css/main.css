@@ -353,7 +353,27 @@ body {
   opacity:0.9;
 }
 
-.currency-container {
+
+
+.f-input {
+    background-color: transparent;
+    border:2px solid #242424;;
+    transition: all 0.3s;
+    padding: 10px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+     color:black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 4px;
+    line-height: 22px;
+    text-align:left;
+  }
+
+
+.container {
   text-align: center;
   background-color: transparent;
   border:2px solid #242424;;
@@ -452,4 +472,3 @@ button:focus {
   .currency input {
     width: 200px;
   }
-
