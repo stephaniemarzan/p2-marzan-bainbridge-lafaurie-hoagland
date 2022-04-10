@@ -345,6 +345,14 @@ Donations Page
 
 }
 
+
+body { 
+  color:white }
+
+.f-input::placeholder {
+  color:black;
+  opacity:0.9;
+}
 .container {
   text-align: center;
   background-color: transparent;
@@ -371,8 +379,26 @@ textarea {
   resize:vertical;
 }
 
-
-
+button {
+  max-width:450px;
+   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#6868c7;
+  border-radius:10px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+text-align:center;
+  transition: all 0.3s;
+  font-weight:600; 
+}
+button:hover {
+  
+ background:#3a3939; 
+}
 
 .money-img {
   width: 150px;
