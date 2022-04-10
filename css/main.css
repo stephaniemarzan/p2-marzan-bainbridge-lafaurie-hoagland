@@ -38,6 +38,7 @@ h1{
     color:#252424;
     text-transform: uppercase;
     padding: 3% 0;
+    text-align: center;
 }
 
 h2{
@@ -339,9 +340,11 @@ Donations Page
 
 }
 
+
 #exchange p {
     text-align: center;
 }
+
 body { 
   color:white }
 
@@ -349,6 +352,7 @@ body {
   color:black;
   opacity:0.9;
 }
+
 .currency-container {
   text-align: center;
   background-color: transparent;
@@ -365,6 +369,7 @@ body {
   line-height: 22px;
   text-align:left;
   margin: auto;
+
 }
 
 .f-input:focus { 
@@ -376,8 +381,10 @@ textarea {
   resize:vertical;
 }
 
+
 .btn {
   max-width:450px;
+
   width: 100%;
   background:#6868c7;
   border-radius:10px;
@@ -390,9 +397,12 @@ textarea {
   text-align:center;
   transition: all 0.3s;
 }
+
 button:hover {
-  
  background:#cd9637; 
+text-align:center;
+  transition: all 0.3s;
+  font-weight:600; 
 }
 
 .money-img {
@@ -437,3 +447,9 @@ button:focus {
   .currency input {
     width: 200px;
   } }
+
+@media (maz-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+
