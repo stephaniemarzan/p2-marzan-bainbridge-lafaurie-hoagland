@@ -249,17 +249,12 @@ Donations Page
     text-transform: uppercase;
 }
 
-.donations-header{
-    padding-left: 10%;
-}
-
 .tabbed-content-containter{
     width: 75%;
     margin: auto;
 }
 .tab {
     overflow: hidden;
-    border: 1px solid #242424;
     background-color: #6868c7;
 }
 
@@ -269,6 +264,7 @@ Donations Page
     border: none;
     padding: 14px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .tab button:hover {
@@ -283,7 +279,6 @@ Donations Page
 .donation-amount {
     display: none;
     padding: 15px 30px;
-    border: 1px solid #242424;
     border-top: none;
     background-color: #5d5d68;
 }
@@ -343,3 +338,102 @@ Donations Page
 }
 
 }
+
+#exchange p {
+    text-align: center;
+}
+body { 
+  color:white }
+
+.f-input::placeholder {
+  color:black;
+  opacity:0.9;
+}
+.currency-container {
+  text-align: center;
+  background-color: transparent;
+  border:2px solid #242424;;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:75%;
+  box-sizing: border-box;
+  color:black;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 4px;
+  line-height: 22px;
+  text-align:left;
+  margin: auto;
+}
+
+.f-input:focus { 
+  border:2px solid #3a3939; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.btn {
+  max-width:450px;
+  width: 100%;
+  background:#6868c7;
+  border-radius:10px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align:center;
+  transition: all 0.3s;
+}
+button:hover {
+  
+ background:#cd9637; 
+}
+
+.money-img {
+  width: 150px;
+}
+
+.currency select {
+  padding: 10px 5px 10px 10px;
+  border: .5px solid #dedede;
+  font-size: 15px;
+  background: transparent;
+  background-size: 10px auto, 100%;
+}
+
+.currency input {
+  border: 2px solid #dedede;
+  background: transparent;
+  font-size: 16px;
+  text-align: center;
+}
+
+.swap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+.rate {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+@media (maz-width: 600px) {
+  .currency input {
+    width: 200px;
+  } }
