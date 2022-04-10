@@ -38,6 +38,7 @@ h1{
     color:#252424;
     text-transform: uppercase;
     padding: 3% 0;
+    text-align: center;
 }
 
 h2{
@@ -343,7 +344,6 @@ Donations Page
 }
 
 }
-
 
 .container {
   text-align: center;
