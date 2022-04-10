@@ -343,3 +343,78 @@ Donations Page
 }
 
 }
+
+
+.container {
+  text-align: center;
+  background-color: transparent;
+  border:2px solid #242424;;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+   color:black;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 4px;
+  line-height: 22px;
+  text-align:left;
+}
+
+.f-input:focus { 
+  border:2px solid #3a3939; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+
+
+
+.money-img {
+  width: 150px;
+}
+
+.currency select {
+  padding: 10px 5px 10px 10px;
+  border: .5px solid #dedede;
+  font-size: 15px;
+  background: transparent;
+  background-size: 10px auto, 100%;
+}
+
+.currency input {
+  border: 2px solid #dedede;
+  background: transparent;
+  font-size: 16px;
+  text-align: center;
+}
+
+.swap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+.rate {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+
+
+@media (maz-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
